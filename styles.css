@@ -1,1 +1,134 @@
 /* your code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+footer {
+  background: #000;
+  width: 100%;
+  color: white;
+}
+
+footer .content {
+  padding: 30px 40px;
+}
+
+
+.top {
+  display: flex;
+  justify-content: space-between; /* company left | icons right */
+  align-items: center;
+}
+
+
+.logo-details .logo_name {
+  font-size: 32px;       /* match screenshot */
+  font-weight: 100;
+}
+
+.media-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.media-icons a {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+	text-decoration:none
+}
+
+.media-icons .facebook  { background-color: #3b5998;  color:white}
+.media-icons .twitter   { background-color: #1da1f2; color:white}
+.media-icons .instagram { background-color: #e1306c; color:white}
+.media-icons .linkedin  { background-color: #0077b5; color:white }
+.media-icons .youtube   { background-color: #ff0000; color:white}
+
+
+.link-boxes {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;         /* space between columns */
+  flex-wrap: nowrap; /* prevents them from breaking into new lines */
+}
+
+.box {
+  width: 200px;
+  list-style: none;
+}
+
+
+.box .link_name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.box li {
+  margin: 8px 0;
+}
+
+.box li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.box li a:hover {
+  color: white;
+}
+
+.bottom-details {
+  background: #222;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom_text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #ccc;
+}
+
+.policy_terms {
+  color: #ccc;
+margin-left:390px;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .link-boxes {
+    gap: 20px;
+  }
+  .box {
+    width: 150px;
+  }
+}
+  .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .top {
+	
+    align-items: flex-start;
+  }
+  .media-icons {
+    margin-top: 15px;
+  }
+}
